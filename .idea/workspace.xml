@@ -5,21 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4257e17-3c7f-47c4-bf3b-6eb0ca076c1d" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjetoBarbearia.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/CadastroController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/CadastroHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Agenda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Funcionario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Pessoa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Servico.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Banco/AgendaBanco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Banco/Banco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Banco/ClienteBanco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Banco/FuncionarioBanco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Banco/ServicoBanco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Servico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Servico.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +70,15 @@
       <option name="presentableId" value="Default" />
       <updated>1718372988364</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1718807415886</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718807415886</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
