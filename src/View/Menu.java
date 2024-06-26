@@ -1,6 +1,8 @@
 package View;
 
 import Controller.CadastroController;
+import Model.Banco.Banco;
+
 import java.util.Scanner;
 
 public class Menu {
@@ -9,6 +11,7 @@ public class Menu {
 
     private String senha;
     public void entrarNoSistema(){
+        Banco.inicia();
         Scanner scanner = new Scanner(System.in);
         System.out.println("====== Menu ======");
         System.out.println("Usuario:");
@@ -37,5 +40,6 @@ public class Menu {
         CadastroController cadastroController = new CadastroController(this);
         entrarNoSistema();
         cadastroController.entrarNoSistema();
+
     }
 }

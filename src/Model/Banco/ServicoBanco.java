@@ -4,7 +4,7 @@ import Model.Servico;
 import java.util.ArrayList;
 
 public class ServicoBanco {
-    public void insert(Servico servico){
+    public void adicionarServico(Servico servico){
         Banco.servico.add(servico);
     }
 
