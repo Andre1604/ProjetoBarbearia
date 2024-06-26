@@ -1,23 +1,31 @@
 package Model;
 
-public class Funcionario extends Pessoa{
-    protected String nivelDeAcesso;
-
-    public Funcionario(int id, String nome, String senha, String telefone, String email, String rg, String nivelDeAcesso) {
-        super(id, nome, senha, telefone, email, rg);
-        this.nivelDeAcesso = nivelDeAcesso;
+// Funcionario.java
+public class Funcionario extends Pessoa {
+    private String funcao;
+    private static int proximoId = 0;
+    private int id;
+    public Funcionario(String nome, String funcao) {
+        super(nome);
+        this.funcao = funcao;
+        this.id = proximoId++;
     }
-
-    public Funcionario(int id, String nome, String nivelDeAcesso) {
-        super(id, nome);
-        this.nivelDeAcesso = nivelDeAcesso;
+    public String getFuncao() {
+        return funcao;
     }
-
-    public String getNivelDeAcesso() {
-        return nivelDeAcesso;
+    public void setFuncao(String funcao) {
+        this.funcao = funcao;
     }
-
-    public void setNivelDeAcesso(String nivelDeAcesso) {
-        this.nivelDeAcesso = nivelDeAcesso;
+    public int getId() {
+        return id;
+    }
+    @Override
+    public String toString() {
+        return "Funcionario{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", funcao='" + funcao + '\'' +
+                '}';
     }
 }
+

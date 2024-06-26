@@ -1,37 +1,40 @@
 package Model;
 
+// Servico.java
 public class Servico {
-    private int id;
     private String descricao;
-    private float valor;
-
-    public Servico(int id, String descricao, float valor) {
-        this.id = id;
+    private double preco;
+    private static int proximoId = 0;
+    private int id;
+    public Servico(String descricao, double preco) {
         this.descricao = descricao;
-        this.valor = valor;
+        this.preco = preco;
+        this.id = proximoId++;
+
     }
 
     public String getDescricao() {
         return descricao;
     }
-
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
-
-    public float getValor() {
-        return valor;
+    public double getPreco() {
+        return preco;
     }
-
-    public void setValor(float valor) {
-        this.valor = valor;
+    public void setPreco(double preco) {
+        this.preco = preco;
     }
-
     public int getId() {
         return id;
     }
-
-    public void setId(int id) {
-        this.id = id;
+    @Override
+    public String toString() {
+        return "Servico{" +
+                "id=" + id +
+                ", descricao='" + descricao + '\'' +
+                ", preco='" + preco + '\'' +
+                '}';
     }
 }
+

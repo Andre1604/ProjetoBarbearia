@@ -5,16 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4257e17-3c7f-47c4-bf3b-6eb0ca076c1d" name="Changes" comment="Banco Commit">
-      <change afterPath="$PROJECT_DIR$/src/Controller/MenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View/Agendamento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/AgendaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/ClienteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/FuncionarioController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/ServicoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/ClienteView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/FuncionarioView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/ServicoView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CadastroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CadastroController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Banco/AgendaBanco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Banco/AgendaBanco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Banco/Banco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Banco/Banco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Banco/ClienteBanco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Banco/ClienteBanco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Banco/FuncionarioBanco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Banco/FuncionarioBanco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Banco/ServicoBanco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Banco/ServicoBanco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CadastroController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CadastroHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MenuController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Agenda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Agenda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Banco/AgendaBanco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Banco/AgendaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Banco/Banco.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Banco/ClienteBanco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Banco/ClientesDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Banco/FuncionarioBanco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Banco/FuncionarioDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Banco/ServicoBanco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Banco/ServicoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Funcionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Pessoa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Servico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Servico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Agendamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/AgendaView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Menu.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,16 +56,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Menu.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.Menu.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/CódigosJava/ProjetoBarbearia",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="View" />
@@ -109,7 +125,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719165689671</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Banco Commit">
+      <option name="closed" value="true" />
+      <created>1719414306211</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1719414306211</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

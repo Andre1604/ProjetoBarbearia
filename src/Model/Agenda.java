@@ -1,35 +1,19 @@
 package Model;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
+// Agenda.java
 import java.util.Date;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class Agenda {
-    private int id;
     private Cliente cliente;
+    private Funcionario funcionario;
     private Servico servico;
     private Date data;
 
-    public Agenda(int id, Cliente cliente, Servico servico, String data) {
-        this.id = id;
+    public Agenda(Cliente cliente, Funcionario funcionario, Servico servico, Date data) {
         this.cliente = cliente;
+        this.funcionario = funcionario;
         this.servico = servico;
-        try {
-            this.data = new SimpleDateFormat("dd/mm/aaaa hh:mm").parse(data);
-        }
-        catch (ParseException ex){
-            Logger.getLogger(Agenda.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
+        this.data = data;
     }
 
     public Cliente getCliente() {
@@ -38,6 +22,14 @@ public class Agenda {
 
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
+    }
+
+    public Funcionario getFuncionario() {
+        return funcionario;
+    }
+
+    public void setFuncionario(Funcionario funcionario) {
+        this.funcionario = funcionario;
     }
 
     public Servico getServico() {
@@ -55,4 +47,6 @@ public class Agenda {
     public void setData(Date data) {
         this.data = data;
     }
+
 }
+

@@ -1,26 +1,32 @@
 package Model;
 
-
 public class Cliente extends Pessoa{
-
-    protected String endereco;
-
-    public Cliente(int id, String nome, String senha, String telefone, String email, String rg, String endereco) {
-        super(id, nome, senha, telefone, email, rg);
-        this.endereco = endereco;
+    private String telefone;
+    private static int proximoId = 0;
+    private int id;
+    public Cliente(String nome, String telefone) {
+        super(nome);
+        this.telefone = telefone;
+        this.id = proximoId++;
     }
 
-    public Cliente(int id, String nome, String endereco) {
-        super(id, nome);
-        this.endereco = endereco;
+    public String getTelefone() {
+        return telefone;
     }
 
-    public String getEndereco() {
-        return endereco;
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
     }
-
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
+    public int getId() {
+        return id;
     }
-
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "index=" + id +
+                ", nome='" + nome + '\'' +
+                ", telefone='" + telefone + '\'' +
+                '}';
+    }
 }
+
